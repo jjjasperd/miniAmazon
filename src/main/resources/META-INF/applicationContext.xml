@@ -12,7 +12,10 @@
         http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
 
     <context:component-scan base-package="com.minia.controller"/>
-    <context:component-scan base-package="com.minia.service"/>
+    <context:component-scan base-package="com.minia.service.products"/>
+    <context:component-scan base-package="com.minia.service.users"/>
+    <context:component-scan base-package="com.minia.dao.productd"/>
+    <context:component-scan base-package="com.minia.dao.userd"/>
     <context:component-scan base-package="com.minia.entity"/>
     <context:component-scan base-package="com.minia.dao"/>
 

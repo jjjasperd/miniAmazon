@@ -14,10 +14,23 @@ import java.io.Serializable;
 public class User implements Serializable {
     @Id
     @GeneratedValue
-    private int id;
-
+    private int uid;
 
     private String username;
+
+    private String userPassword;
+
+    private String userEmail;
+
+    //private List<Product> wishlistp;
+
+    public int getUid() {
+        return uid;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
 
     public String getUsername() {
         return username;
@@ -27,11 +40,29 @@ public class User implements Serializable {
         this.username = username;
     }
 
-    public int getId() {
-        return id;
+    public String getUserPassword() {
+        return userPassword;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
     }
+
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+    }
+/*
+    public List<Product> getWishlistp() {
+        return wishlistp;
+    }
+*/
+    /*
+    public void setWishlistp(List<Product> wishlistp) {
+        this.wishlistp = wishlistp;
+    }
+    */
 }
