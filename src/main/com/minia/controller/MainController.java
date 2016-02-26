@@ -36,7 +36,6 @@ public class MainController {
     @RequestMapping("/json")
     @ResponseBody
     public List<User> json(){
-
         return userService.getAllUsernames();
     }
 }
