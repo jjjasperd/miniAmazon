@@ -12,12 +12,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.json.simple.JSONObject;
+import org.springframework.web.servlet.ModelAndView;
+
 
 /**
  * Created by duanyujia on 2/24/16.
  */
 @Controller
-@RequestMapping("/spring")
+@RequestMapping("")
 public class MainController {
 
     @Autowired
@@ -26,20 +29,24 @@ public class MainController {
     @Autowired
     private ProductService productService;
 
-    @RequestMapping("")
-    public String home(){
+    @RequestMapping("/home")
+    public void home(){
         try{
             List<User> us = new ArrayList<User>();
             List<Product> ps = new ArrayList<Product>();
-            for (int i = 0; i < 20; ++i){
+            List<String> wl = new ArrayList<String>();
+            for (int i = 0; i < 2; ++i){
                 User u = new User();
-                u.setUsername("user" + i);
+                u.setUsername("userEric" + i);
                 u.setUserPassword("user");
-                u.setUserEmail("user" + i + "@gmail.com");
+                u.setUserEmail("userEric" + i + "@gmail.com");
+
+                wl.add("i");
+                u.setWishlist(wl.toString());
                 us.add(u);
                 userService.saveUsers(us);
             }
-            for (int i = 0; i <20; ++ i){
+            for (int i = 0; i <2; ++ i){
                 Product p = new Product();
                 p.setpName("product" + i);
                 p.setPrice(2.3333);
@@ -50,14 +57,35 @@ public class MainController {
             e.printStackTrace();
         }
 
-        return "index";
+        //return "index";
     }
 
     @RequestMapping("/json")
-    @ResponseBody
+
     public List<User> json(){
         return userService.getAllUsernames();
     }
+
+
+    @RequestMapping("/testWL")
+    @ResponseBody
+    public ModelAndView getWL(){
+
+
+        System.out.println(userService.getWishList());
+
+        ModelAndView temp = new ModelAndView();
+        temp.addObject("sss",userService.getWishList());
+            //system.out.println();
+        return temp;
+        //return temp;
+    }
+
+
+
+
+
+
 
 }
 

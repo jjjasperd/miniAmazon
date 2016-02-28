@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="miniAmazon:war exploded">
+  <artifact type="exploded-war" name="miniamazon:war exploded">
     <output-path>$PROJECT_DIR$/target/miniamazon</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="miniAmazon" />
+          <element id="module-output" name="miniamazon" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.0.4.RELEASE" />
@@ -41,12 +41,13 @@
           <element id="library" level="project" name="Maven: org.jboss:jandex:1.1.0.Final" />
           <element id="library" level="project" name="Maven: c3p0:c3p0:0.9.1.2" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.31" />
+          <element id="library" level="project" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/miniamazon/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="miniAmazon/web/Web" />
+      <element id="javaee-facet-resources" facet="miniamazon/web/Web" />
     </root>
   </artifact>
 </component>

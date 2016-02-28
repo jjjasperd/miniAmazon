@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by duanyujia on 2/24/16.
@@ -22,7 +23,9 @@ public class User implements Serializable {
 
     private String userEmail;
 
-    //private List<Product> wishlistp;
+    private String wishList;
+
+
 
     public int getUid() {
         return uid;
@@ -55,14 +58,25 @@ public class User implements Serializable {
     public void setUserEmail(String userEmail) {
         this.userEmail = userEmail;
     }
-/*
-    public List<Product> getWishlistp() {
-        return wishlistp;
+
+
+    public String getWishlist() {
+        return wishList;
     }
-*/
-    /*
-    public void setWishlistp(List<Product> wishlistp) {
-        this.wishlistp = wishlistp;
+
+
+    public void setWishlist(String wishList) {
+        this.wishList = wishList;
     }
-    */
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "uid=" + uid +
+                ", username='" + username + '\'' +
+                ", userPassword='" + userPassword + '\'' +
+                ", userEmail='" + userEmail + '\'' +
+                ", wishList='" + wishList + '\'' +
+                '}';
+    }
 }

@@ -1,8 +1,8 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="miniAmazon:war">
+  <artifact type="war" name="miniamazon:war">
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="miniamazon.war">
-      <element id="artifact" artifact-name="miniAmazon:war exploded" />
+      <element id="artifact" artifact-name="miniamazon:war exploded" />
     </root>
   </artifact>
 </component>
