@@ -9,10 +9,10 @@
 <%@ taglib prefix="c" uri ="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-    <title>hahaha</title>
+    <title>Index</title>
 </head>
 <body>
-lian qi lai
+    Index page
 
 
 </body>

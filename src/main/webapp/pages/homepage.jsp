@@ -136,9 +136,9 @@
                         <div class= "Addfunctions">
                             <form method="POST" action="/com/minia/controller/MainController.java/testWL">
                                 <p>
-                                    <button type = "button" class = "btn btn-primary">Add to the Cart</button>
+                                    <button type = "button" class = "btn btn-primary" onclick="showAddCartMessage()">Add to the Cart</button>
                                 <p></p>
-                                <button type = "button" class = "btn btn-success">Add to your wishList</button>
+                                <button type = "button" class = "btn btn-success" onclick="showAddWLMessage()">Add to your wishList</button>
                                 </p>
                             </form>
                         </div>
@@ -158,8 +158,8 @@
                 </div>
 
 
-
-
+                Hello I am here
+                ${sss}
 
 
 
@@ -315,6 +315,8 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 
+<!-- Homepage js-->
+<script src = "js/homepage.js"></script>
 </body>
 
 </html>

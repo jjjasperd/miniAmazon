@@ -20,7 +20,7 @@ import org.springframework.web.servlet.ModelAndView;
  * Created by duanyujia on 2/24/16.
  */
 @Controller
-@RequestMapping("")
+//@RequestMapping("")
 public class MainController {
 
     @Autowired
@@ -29,7 +29,7 @@ public class MainController {
     @Autowired
     private ProductService productService;
 
-    @RequestMapping("/home")
+    @RequestMapping("/add")
     public void home(){
         try{
             List<User> us = new ArrayList<User>();
@@ -66,26 +66,19 @@ public class MainController {
         return userService.getAllUsernames();
     }
 
-
+    /*
     @RequestMapping(value = "/testWL", method = RequestMethod.POST)
     @ResponseBody
     public ModelAndView getWL(){
-
-
         System.out.println(userService.getWishList());
 
         ModelAndView temp = new ModelAndView();
         temp.addObject("sss",userService.getWishList());
-            //system.out.println();
         return temp;
-        //return temp;
+
     }
-
-
-
-
-
-
+    */
 
 }
+
 

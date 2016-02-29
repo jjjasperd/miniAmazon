@@ -10,4 +10,5 @@ import java.util.List;
 public interface ProductDAO {
     public int save(Product p);
     public List<Product> findAll();
+    public List getProducts();
 }
