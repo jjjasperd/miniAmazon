@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/miniamazon.iml" filepath="$PROJECT_DIR$/miniamazon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miniAmazon.iml" filepath="$PROJECT_DIR$/miniAmazon.iml" />
     </modules>
   </component>
 </project>

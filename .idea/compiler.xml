@@ -22,11 +22,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="miniAmazon" />
         <module name="miniamazon" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="miniamazon" target="1.5" />
+      <module name="miniAmazon" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

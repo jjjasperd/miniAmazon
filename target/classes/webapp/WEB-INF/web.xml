@@ -43,6 +43,9 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
 
+  <welcome-file-list>
+    <welcome-file>/pages/homepage.jsp</welcome-file>
+  </welcome-file-list>
 
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>

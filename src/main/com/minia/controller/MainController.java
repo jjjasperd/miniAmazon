@@ -8,8 +8,8 @@ import org.hibernate.HibernateException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import java.util.ArrayList;
 import java.util.List;
 import org.json.simple.JSONObject;
@@ -67,7 +67,7 @@ public class MainController {
     }
 
 
-    @RequestMapping("/testWL")
+    @RequestMapping(value = "/testWL", method = RequestMethod.POST)
     @ResponseBody
     public ModelAndView getWL(){
 
