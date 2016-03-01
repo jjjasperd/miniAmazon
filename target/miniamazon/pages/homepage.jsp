@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@ taglib prefix="c" uri ="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -118,7 +118,7 @@
             </div>
 
 
-
+<!--    ********************************************************************************************************************      -->
 
 
 
@@ -134,11 +134,12 @@
                             <p>description description description <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
                         </div>
                         <div class= "Addfunctions">
-                            <form method="POST" action="/com/minia/controller/MainController.java/testWL">
+                            <form method="POST" action="/showPname">
                                 <p>
-                                    <button type = "button" class = "btn btn-primary" onclick="showAddCartMessage()">Add to the Cart</button>
+                                    <input  name = "111"  type = "hidden" value = "nige shabi">
+                                    <button type="submit" class = "btn btn-primary" onclick="showAddCartMessage()">Add to the Cart</button>
                                 <p></p>
-                                <button type = "button" class = "btn btn-success" onclick="showAddWLMessage()">Add to your wishList</button>
+                                <button type = "button" class = "btn btn-success" onclick="showAddWLMessage()" value = "BBB">Add to your wishList</button>
                                 </p>
                             </form>
                         </div>
@@ -158,12 +159,15 @@
                 </div>
 
 
-                Hello I am here
-                ${sss}
-
-
-
-
+                <!-- For data display test-->
+                <!--<c:forEach items="${pddList}" var="pdd" >
+                    <li>
+                        <div class="pddMessage">
+                            <c:out value="${pdd.pName}" />
+                        </div>
+                    </li>
+                </c:forEach>
+                -->
 
                 <div class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
@@ -301,7 +305,7 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright &copy; Mini Amazon demo fff</p>
+                <p>Copyright &copy; Mini Amazon demo</p>
             </div>
         </div>
     </footer>

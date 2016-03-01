@@ -19,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 /**
  * Created by duanyujia on 2/24/16.
  */
-@Controller
+//@Controller
 //@RequestMapping("")
 public class MainController {
 

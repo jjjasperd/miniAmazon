@@ -18,7 +18,7 @@ public class ProductServiceImpl implements ProductService {
     @Autowired
     private ProductDAO productDAO;
 
-    public void saveProducts(List<Product> ps) {
+    public void saveProducts(List<Product>ps) {
         for(Product p : ps){
             productDAO.save(p);
         }
