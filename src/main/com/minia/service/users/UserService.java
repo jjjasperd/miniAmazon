@@ -11,4 +11,5 @@ public interface UserService {
     public void saveUsers(List<User> us);
     public List<User> getAllUsernames();
     public List getWishList();
+    public void updateWL(int userid,String pid);
 }

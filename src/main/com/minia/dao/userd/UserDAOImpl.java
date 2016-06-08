@@ -41,4 +41,16 @@ public class UserDAOImpl implements UserDAO {
         return users;
 
     }
+
+    public void updateWL(int userid, String pid){
+       String hql = "UPDATE User set wishList = ?"+" WHERE uid = ?";
+        Query query = sessionFactory.getCurrentSession().createQuery(hql);
+        query.setParameter(0,pid);
+        query.setParameter(1,userid);
+        int result = query.executeUpdate();
+        System.out.println("daoimple" + result);
+        //query.executeUpdate(hql);
+    }
+
+
 }

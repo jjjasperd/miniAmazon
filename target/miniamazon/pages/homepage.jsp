@@ -8,8 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri ="http://java.sun.com/jsp/jstl/core" %>
 
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns: th = "http:www.thymeleaf.org">
 
 <head>
 
@@ -139,7 +140,7 @@
                                     <input  name = "111"  type = "hidden" value = "nige shabi">
                                     <button type="submit" class = "btn btn-primary" onclick="showAddCartMessage()">Add to the Cart</button>
                                 <p></p>
-                                <button type = "button" class = "btn btn-success" onclick="showAddWLMessage()" value = "BBB">Add to your wishList</button>
+                                <button type = "button" class = "btn btn-success" onclick="showAddWLMessage()">Add to your wishList</button>
                                 </p>
                             </form>
                         </div>
@@ -179,11 +180,14 @@
                             <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                         <div class= "Addfunctions">
-                            <p>
-                                <button type = "button" class = "btn btn-primary">Add to the Cart</button>
-                            <p></p>
-                            <button type = "button" class = "btn btn-success">Add to your wishList</button>
-                            </p>
+                            <form method="POST" action="/showPname">
+                                <p>
+                                    <input  name = "111"  type = "hidden" value = "nige shabi">
+                                    <button type="submit" class = "btn btn-primary" onclick="showAddCartMessage()">Add to the Cart</button>
+                                <p></p>
+                                <button type = "button" class = "btn btn-success" onclick="showAddWLMessage()">Add to your wishList</button>
+                                </p>
+                            </form>
                         </div>
                         <div class="ratings">
                             <p class="pull-right">12 reviews</p>
@@ -208,11 +212,14 @@
                             <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                         <div class= "Addfunctions">
-                            <p>
-                                <button type = "button" class = "btn btn-primary">Add to the Cart</button>
-                            <p></p>
-                            <button type = "button" class = "btn btn-success">Add to your wishList</button>
-                            </p>
+                            <form method="POST" action="/updateWL">
+                                <p>
+                                    <input  name = "111"  type = "hidden" value = "nige shabi">
+                                    <button type="submit" class = "btn btn-primary" onclick="showAddCartMessage()">Add to the Cart</button>
+                                <p></p>
+                                <button type = "button" class = "btn btn-success" onclick="showAddWLMessage()">Add to your wishList</button>
+                                </p>
+                            </form>
                         </div>
                         <div class="ratings">
                             <p class="pull-right">31 reviews</p>

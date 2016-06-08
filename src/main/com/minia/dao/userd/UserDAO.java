@@ -11,4 +11,5 @@ public interface UserDAO {
     public int save(User u);
     public List<User> findAll();
     public List findWishList();
+    public void updateWL(int userid,String pid);
 }

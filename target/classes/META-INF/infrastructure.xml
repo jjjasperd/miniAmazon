@@ -11,6 +11,7 @@
     ">
 
     <context:property-placeholder location="classpath:/resources/META-INF/properties/hibernate.properties" />
+    <context:property-placeholder location="classpath:/resources/META-INF/properties/log4j.properties"/>
 
     <!-- 使用C3P0数据源，MySQL数据库 -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"

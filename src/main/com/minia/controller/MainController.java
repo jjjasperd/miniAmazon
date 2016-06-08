@@ -60,24 +60,6 @@ public class MainController {
         //return "index";
     }
 
-    @RequestMapping("/json")
-
-    public List<User> json(){
-        return userService.getAllUsernames();
-    }
-
-    /*
-    @RequestMapping(value = "/testWL", method = RequestMethod.POST)
-    @ResponseBody
-    public ModelAndView getWL(){
-        System.out.println(userService.getWishList());
-
-        ModelAndView temp = new ModelAndView();
-        temp.addObject("sss",userService.getWishList());
-        return temp;
-
-    }
-    */
 
 }
 
